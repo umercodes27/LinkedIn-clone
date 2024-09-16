@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone</title>
+    <link rel = "stylesheet" href="styles.css">
+</head>
+<body> 
+
+    <nav class="navbar">
+        <div class="navbar-left"></div>
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="LinkedIn logo"></a>
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="search">
+            </div>
+
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" class="active-link"><img src="images/home.png" alt="Home"> <span>Home</span></a></li>
+                <li><a href="certifications.html"><img src="images/network.png" alt="network"> <span>Certifications</span></a></li>
+                <li><a href="skills.html"><img src="images/jobs.png" alt="jobs"> <span>Skills</span></a></li>
+                <li><a href="projects.html"><img src="images/message.png" alt="Messages"> <span>Projects</span></a></li>
+                <li><a href="#"><img src="images/notification.png" alt="Notifications"> <span>References</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/umer's photo1.png" alt="user-1" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!-- -----------profile dropdown menu----------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/umer's photo1.jpg" alt="">
+                    <div>
+                        <h3>Umer</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings and privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help and Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p>Display and Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+        
+    </nav>
+
+    <!---------- end of navbar ---------->
+
+
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="images/cover-pic.png" alt="" width="100%">
+                <div class="profile-container-inner">
+                    <img src="images/umer's photo1.jpg" class="profile-pic">
+                    <h1>Umer Aziz</h1>
+                    <b>Web Developer at Microsoft | Student at CUI</b>
+                    <p>Hasan Abdal, Punjab, Pakistan &middot; <a href="#">Contact info</a></p>
+                    <div class="mutual-connections">
+                        <img src="images/user-2.png" alt="">
+                        <span>1 mutual connection: Umair Ahmed</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="images/connect.png">Connect</a>
+                        <a href="#"><img src="images/chat.png">message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>A Computer Science student at the COMSATS University Islamabad, 
+                    Wah Campus with a good grip in Data analysis. Possess strong 
+                    technical skills in python, complimented by a proficiency in 
+                    java, C++ and JavaScript. Proficient in English and Urdu languages. 
+                    Excellent problem-solving abilities and a strong analytical mindset 
+                    combined with effective communication skills. Keen to leverage academic 
+                    knowledge and practical experience to excel as a data scientist in IT sector.
+                </p>
+                <a href="#" class="see-more-link">See more...</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="images/microsoft.png" alt="">
+                    <div>
+                        <h3>Lead Front End Developer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Feb 2022 - Present &middot;2.5 years</b>
+                        <p>Computer programming is the process of performing a particular
+                             computation, usually by designing and building an executable computer 
+                             program.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="images/slack.png" alt="">
+                    <div>
+                        <h3>Full Stack Developer</h3>
+                        <b>slack &middot; Full-time</b>
+                        <b>Feb 2021 - Jan 2022 &middot;1 year</b>
+                        <p>Computer programming is the process of performing a particular
+                             computation, usually by designing and building an executable computer 
+                             program.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="images/google.png" alt="">
+                    <div>
+                        <h3>Web Developer</h3>
+                        <b>Google Inc &middot; Full-time</b>
+                        <b>Feb 2017 - May 2019 &middot;2 years</b>
+                        <p>Computer programming is the process of performing a particular
+                             computation, usually by designing and building an executable computer 
+                             program.
+                        </p>
+                        
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="experience-link">Show More <img src="images/right-arrow.png" alt=""></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="images/stanford.png" >
+                    <div>
+                        <h3>Stanford University</h3>
+                        <b>BS(CS), Computer Science</b>
+                        <b>2018-2022</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/north.png" >
+                    <div>
+                        <h3>Northwestern University</h3>
+                        <b>BS(CS), Computer Science</b>
+                        <b>2016-2019</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/mit.png" >
+                    <div>
+                        <h3>Harvard University</h3>
+                        <b>Senior High School</b>
+                        <b>2011-2015</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Leadership</a>
+                <a href="#" class="skills-btn">Web Design</a>
+                <a href="#" class="skills-btn">Comuunication</a>
+                <a href="#" class="skills-btn">UI/UX</a>
+                <a href="#" class="skills-btn">Coding</a>
+                <a href="#" class="skills-btn">Problem Solving</a>
+                <a href="#" class="skills-btn">Python</a>
+                <a href="#" class="skills-btn">Javascript</a>
+            </div>
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <a href="#" class="lang-btn">English</a>
+                <a href="#" class="lang-btn">Urdu</a>
+            </div>
+
+        </div>
+<!-- -----------profile sidebar----------->
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="images/user-1.png" alt="Ad">
+                    <img src="images/mi-logo.png" alt="Ad">
+                </div>
+                <b>Brand and demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn more</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>
+                    people you may know
+                </h3>
+                <div class="sidebar-people-row">
+                    <img src="images/user-3.png" >
+                    <div>
+                        <h2>Qamar Zaman</h2>
+                        <p>Data Scientist at Microsoft</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-4.png" >
+                    <div>
+                        <h2>Daniyal Shah</h2>
+                        <p>Data Analyst at Google</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-5.png" >
+                    <div>
+                        <h2>Ahsan Majeed</h2>
+                        <p>Web Developer at LinkedIn</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-2.png" >
+                    <div>
+                        <h2>Mehak Zafar</h2>
+                        <p>Project Manager at Microsoft</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-people-row">
+                    <img src="images/user-1.png" >
+                    <div>
+                        <h2>Arslan Khalid</h2>
+                        <p>AI Engineer at Microsoft</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the app</a>
+            <a href="#">More</a>
+            
+            <div class="copyright-msg">
+                <img src="images/logo.png">
+                <p>Linkedup &#169; 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu")
+        }
+
+    </script>
+
+    
+</body>
+</html>
